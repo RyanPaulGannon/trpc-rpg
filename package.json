@@ -1,0 +1,22 @@
+{
+  "name": "trpc-rpg",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/app.js",
+  "types": "dist/app.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RyanPaulGannon/trpc-rpg.git"
+  },
+  "author": "ryanpaulgannon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanPaulGannon/trpc-rpg/issues"
+  },
+  "homepage": "https://github.com/RyanPaulGannon/trpc-rpg#readme",
+  "devDependencies": {}
+}

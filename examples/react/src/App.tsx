@@ -5,19 +5,6 @@ import reactLogo from './assets/react.svg'
 import { useEffect, useState } from 'react'
 
 function App() {
-  const [cart, setCart] = useState({
-    loading: true,
-    data: null,
-  })
-
-  useEffect(() => {
-    setCart({ loading: true, data: null })
-    fetch('/api/cart')
-      .then(async (res) => console.log(await res.json()))
-      .then((data) => setCart({ loading: false, data }))
-      .catch(() => setCart({ loading: false, data: null }))
-  }, [])
-
   return (
     <>
       <div>
@@ -29,7 +16,6 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">{cart.data}</div>
       <LoginForm />
     </>
   )

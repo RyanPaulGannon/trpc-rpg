@@ -12,5 +12,9 @@ export const worker = setupWorker(
         ],
       })
     )
+  }),
+  rest.post('/api/login', (req, res, ctx) => {
+    sessionStorage.setItem('is-authenticated', 'true')
+    return res(ctx.status(200))
   })
 )
